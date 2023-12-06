@@ -1,10 +1,13 @@
 
 =========================New Request=========================
-GET : http://localhost:5078/user
+GET : http://localhost:5078/user/
 
 body:
 
-Null
+{
+	
+}
+
 
 ------------------------------------------------------------
 200
@@ -13,22 +16,451 @@ body:
 
 [
 {
-	'email': 'aaa@gmail',
-	'name': 'zzzz',
+	'email': 'douglas_do_volei@gmail.com',
+	'name': 'Douglas Silva',
 	'permission': {
-		'guid': '4b5ff63e-3ce4-417c-a95e-9f78287fe739',
-		'name': 'bbb'
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
 	}
 	
 }
 ,
 {
-	'email': 'aAAaa@gmail',
-	'name': 'kassiozzz',
+	'email': 'salsicha@scooby.doo.com',
+	'name': 'Salsicha do Scooby Doo',
 	'permission': {
-		'guid': '4b5ff63e-3ce4-417c-a95e-9f78287fe739',
-		'name': 'bbb'
+		'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+		'name': 'regular'
 	}
 	
+}
+,
+{
+	'email': 'cebola@turma.monica.com',
+	'name': 'Cebola vulgo cebolinha',
+	'permission': {
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
+	}
+	
+}
+,
+{
+	'email': 'dummy@mail',
+	'name': 'dummy name',
+	'permission': {
+		'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+		'name': 'regular'
+	}
+	
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/userpermission/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+	'name': 'ADM'
+}
+,
+{
+	'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+	'name': 'regular'
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/post/preview
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'guid': '8fe44be9-ba3a-4865-b825-873324068bcc',
+	'title': 'TUTORIAL RAPIDO E FACIL DE SAQUE VIAGEM',
+	'subtitle': 'Tutorial explicativo de como fazer saque viagem com campeão OLIMPICO Douglas Souza',
+	'date': '2023-12-05T19:41:22.0179834'
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/collaboration/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'user_email': 'cebola@turma.monica.com',
+	'user_name': 'Cebola vulgo cebolinha',
+	'guid_post': '8fe44be9-ba3a-4865-b825-873324068bcc',
+	'post_title': 'TUTORIAL RAPIDO E FACIL DE SAQUE VIAGEM',
+	'permission': {
+		'guid': '4723cbf0-9a32-4c77-bf91-2d4c077e16c2',
+		'name': 'Edit'
+	}
+	
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/collaborationpermission/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'guid': '95b2d9b8-02b0-4e82-bbfe-8357ba5d7d97',
+	'name': 'read_only'
+}
+,
+{
+	'guid': '4723cbf0-9a32-4c77-bf91-2d4c077e16c2',
+	'name': 'Edit'
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/like/post/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+{
+	'likes': [
+	{
+		'user_email': 'salsicha@scooby.doo.com',
+		'username': 'Salsicha do Scooby Doo'
+	}
+	]
+}
+
+
+=========================New Request=========================
+GET : http://localhost:5078/comment/post/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'guid': 'fc3f1b53-5678-4152-ac8d-b1dcf7076b26',
+	'content': 'Tava precisando mesmo desse TUTORIALZASSO! VALEU PAI TAMO JUNTO! VOA AI NAS OLIMPIADA!',
+	'user_email': 'salsicha@scooby.doo.com',
+	'username': 'Salsicha do Scooby Doo',
+	'guid_post': '8fe44be9-ba3a-4865-b825-873324068bcc',
+	'post_title': 'TUTORIAL RAPIDO E FACIL DE SAQUE VIAGEM',
+	'publish_date': '2023-12-05T22:50:26.6067086'
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/user/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'email': 'douglas_do_volei@gmail.com',
+	'name': 'Douglas Silva',
+	'permission': {
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
+	}
+	
+}
+,
+{
+	'email': 'salsicha@scooby.doo.com',
+	'name': 'Salsicha do Scooby Doo',
+	'permission': {
+		'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+		'name': 'regular'
+	}
+	
+}
+,
+{
+	'email': 'cebola@turma.monica.com',
+	'name': 'Cebola vulgo cebolinha',
+	'permission': {
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
+	}
+	
+}
+,
+{
+	'email': 'dummy@mail',
+	'name': 'dummy name',
+	'permission': {
+		'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+		'name': 'regular'
+	}
+	
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/category/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'parents': [
+	],
+	'guid': '8509ef71-ac06-414b-8f07-eed651711b19',
+	'name': 'volei'
+}
+]
+
+=========================New Request=========================
+POST : http://localhost:5078/Like/dummy@mail/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+{
+	
+}
+
+
+=========================New Request=========================
+GET : http://localhost:5078/Like/post/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+{
+	'likes': [
+	{
+		'user_email': 'dummy@mail',
+		'username': 'dummy name'
+	}
+	,
+	{
+		'user_email': 'salsicha@scooby.doo.com',
+		'username': 'Salsicha do Scooby Doo'
+	}
+	]
+}
+
+
+=========================New Request=========================
+DELETE : http://localhost:5078/user/dummy@mail
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+{
+	
+}
+
+
+=========================New Request=========================
+GET : http://localhost:5078/user/
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'email': 'douglas_do_volei@gmail.com',
+	'name': 'Douglas Silva',
+	'permission': {
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
+	}
+	
+}
+,
+{
+	'email': 'salsicha@scooby.doo.com',
+	'name': 'Salsicha do Scooby Doo',
+	'permission': {
+		'guid': '4f6aa386-c533-4830-aaa1-24cdd862b540',
+		'name': 'regular'
+	}
+	
+}
+,
+{
+	'email': 'cebola@turma.monica.com',
+	'name': 'Cebola vulgo cebolinha',
+	'permission': {
+		'guid': '77942e11-d061-4454-8fef-211d173c3ef4',
+		'name': 'ADM'
+	}
+	
+}
+]
+
+=========================New Request=========================
+GET : http://localhost:5078/Like/post/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+{
+	'likes': [
+	{
+		'user_email': 'salsicha@scooby.doo.com',
+		'username': 'Salsicha do Scooby Doo'
+	}
+	]
+}
+
+
+=========================New Request=========================
+GET : http://localhost:5078/comment/post/8fe44be9-ba3a-4865-b825-873324068bcc
+
+body:
+
+{
+	
+}
+
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'guid': 'fc3f1b53-5678-4152-ac8d-b1dcf7076b26',
+	'content': 'Tava precisando mesmo desse TUTORIALZASSO! VALEU PAI TAMO JUNTO! VOA AI NAS OLIMPIADA!',
+	'user_email': 'salsicha@scooby.doo.com',
+	'username': 'Salsicha do Scooby Doo',
+	'guid_post': '8fe44be9-ba3a-4865-b825-873324068bcc',
+	'post_title': 'TUTORIAL RAPIDO E FACIL DE SAQUE VIAGEM',
+	'publish_date': '2023-12-05T22:50:26.6067086'
 }
 ]

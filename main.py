@@ -10,7 +10,7 @@ with open("requests.json") as f:
 data = [Request(req) for req in data]
 
 with open("results.txt", "w+") as f:
-    for req in data:
+    for i, req in enumerate(data):
         res = Response(req.make())
 
         f.writelines([

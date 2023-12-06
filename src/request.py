@@ -19,10 +19,10 @@ class Request:
         self.method_name = r["method"]
         self.url = r["url"]
         self.method = self.___methods[self.method_name]
-        self.body = r.get("body", dict())
+        self.body = r.get("body", {})
 
     def make(self):
-        return self.method(self.url, self.body)
+        return self.method(url=self.url, json=self.body, headers={'Content-Type': 'application/json'})
     
     def __str__(self) -> str:
         return self.method_name + " : " + self.url + "\n\nbody:\n\n" + fortmat_json_string(self.body.__str__()) 

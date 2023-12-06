@@ -2,5 +2,61 @@
     {
         "url": "http://localhost:5078/user/",
         "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/userpermission/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/post/preview",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/collaboration/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/collaborationpermission/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/like/post/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/comment/post/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/user/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/category/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/Like/dummy@mail/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "POST"
+    },
+    {
+        "url": "http://localhost:5078/Like/post/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/user/dummy@mail",
+        "method": "DELETE"
+    },
+    {
+        "url": "http://localhost:5078/user/",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/Like/post/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "GET"
+    },
+    {
+        "url": "http://localhost:5078/comment/post/8fe44be9-ba3a-4865-b825-873324068bcc",
+        "method": "GET"
     }
 ]
