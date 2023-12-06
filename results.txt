@@ -1,0 +1,34 @@
+
+=========================New Request=========================
+GET : http://localhost:5078/user
+
+body:
+
+Null
+
+------------------------------------------------------------
+200
+
+body:
+
+[
+{
+	'email': 'aaa@gmail',
+	'name': 'zzzz',
+	'permission': {
+		'guid': '4b5ff63e-3ce4-417c-a95e-9f78287fe739',
+		'name': 'bbb'
+	}
+	
+}
+,
+{
+	'email': 'aAAaa@gmail',
+	'name': 'kassiozzz',
+	'permission': {
+		'guid': '4b5ff63e-3ce4-417c-a95e-9f78287fe739',
+		'name': 'bbb'
+	}
+	
+}
+]
